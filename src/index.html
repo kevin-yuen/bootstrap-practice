@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>SmartTravel</title>
+  </head>
+  <body>
+    <div id="container-fluid">
+      <header>
+        <nav class="navbar h-25">
+          <div class="container-fluid">
+            <h1
+              class="custom-text-color-antiquewhite custom-font-size-50 ms-5 me-3"
+              style="font-family: 'Patrick Hand', cursive"
+            >
+              SMART<span class="custom-text-color-orangered">TRAVEL</span>
+              <img
+                src="../assets/img/logo.png"
+                alt="smart-travel"
+                style="height: 70px"
+              />
+            </h1>
+            <div
+              class="d-none d-sm-none d-md-none d-lg-none d-xl-flex flex-row"
+            >
+              <a
+                class="nav-link active text-uppercase fw-light fs-5 border border-width-2 rounded me-4 ps-2 pe-2 custom-background-color-antiquewhite opacity-75 custom-text-color-orangered"
+                aria-current="page"
+                href="#"
+                >Plan Your Trip</a
+              >
+              <a
+                class="nav-link text-uppercase fw-light fs-5 border border-width-2 rounded me-4 ps-2 pe-2 custom-background-color-antiquewhite opacity-75 custom-text-color-orangered"
+                href="#"
+                >Events Around Me</a
+              >
+              <a
+                class="nav-link text-uppercase fw-light fs-5 border border-width-2 rounded ps-2 pe-2 custom-background-color-antiquewhite opacity-75 custom-text-color-orangered"
+                href="#"
+                >Upcoming Trips</a
+              >
+            </div>
+            <div
+              class="d-none d-sm-none d-md-none d-lg-none d-xl-flex flex-row me-5"
+            >
+              <a class="nav-link" href="#">
+                <i class="bi bi-box-arrow-in-right"></i>
+              </a>
+              <a class="nav-link" href="#">
+                <i class="bi bi-cart ms-3"></i>
+              </a>
+            </div>
+            <button
+              class="navbar-toggler me-5 rounded-circle d-xl-none"
+              style="height: 50px"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvas-navbar-group"
+              aria-controls="offcanvas-navbar-group"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end bg-info bg-opacity-50"
+              tabindex="-1"
+              id="offcanvas-navbar-group"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  Offcanvas
+                </h5> -->
+                <h5
+                  class="offcanvas-title custom-text-color-antiquewhite custom-font-size-50 ms-5 me-3"
+                  id="offcanvasNavbarLabel"
+                  style="font-family: 'Patrick Hand', cursive"
+                >
+                  SMART<span class="custom-text-color-orangered">TRAVEL</span>
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active fw-bolder fs-5 custom-text-color-antiquewhite"
+                      aria-current="page"
+                      href="#"
+                      >PLAN YOUR TRIP</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link fw-bolder fs-5 custom-text-color-antiquewhite"
+                      href="#"
+                      >EVENTS AROUND ME</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link fw-bolder fs-5 custom-text-color-antiquewhite"
+                      href="#"
+                      >UPCOMING TRIPS</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link fw-bolder fs-5 custom-text-color-antiquewhite"
+                      href="#"
+                      >MY CART</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link fw-bolder fs-5 custom-text-color-antiquewhite"
+                      href="#"
+                      >LOGIN</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main
+        class="position-relative top-33 text-center bg-info bg-opacity-50 pb-2"
+      >
+        <h1>
+          <div class="d-inline ps-4 pe-4 pb-2 rounded opacity-75">
+            <span class="fw-bolder custom-text-color-orangered">E</span
+            ><span class="fw-light custom-text-color-orangered">mbrace </span>
+            <span class="fw-bolder custom-text-color-orangered">E</span
+            ><span class="fw-light custom-text-color-orangered"
+              >xploration</span
+            >
+          </div>
+        </h1>
+        <h4>
+          <div
+            class="phrase custom-text-color-orangered d-inline ps-4 pe-4 pb-2 rounded-bottom opacity-75"
+          >
+            The whole world awaits.
+          </div>
+        </h4>
+        <button type="button" class="btn btn-primary btn-lg mt-3 fw-bolder">
+          Get Started
+        </button>
+      </main>
+    </div>
+    <section
+      class="container bg-info bg-opacity-50 custom-border-top-radius-50 position-relative mt-n5"
+    >
+      <div class="row">
+        <div class="col-xl-4">
+          <div class="card position-relative mt-4 mb-4">
+            <img
+              class="rounded img-fluid"
+              src="../assets/img/sightseeing-thumbnail.jpeg"
+              alt="sightseeing"
+            />
+            <div class="card-img-overlay">
+              <h4
+                class="card-title custom-background-color-antiquewhite opacity-75 rounded custom-text-color-orangered fw-bolder fs-3 p-2 d-inline"
+              >
+                from Sightseeing in Europe
+              </h4>
+              <p
+                class="card-footer bg-info bg-opacity-50 rounded custom-text-color-antiquewhite fw-light fs-5 p-3 me-3 text-uppercase position-absolute bottom-0"
+              >
+                The journey, not the destination matters
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <div class="card position-relative mt-4 mb-4">
+            <img
+              class="rounded img-fluid"
+              src="../assets/img/stay-thumbnail.webp"
+              alt="sightseeing"
+            />
+            <div class="card-img-overlay">
+              <h4
+                class="card-title custom-background-color-antiquewhite opacity-75 rounded custom-text-color-orangered fw-bolder fs-3 p-2 d-inline"
+              >
+                to Life Experiences in Asia
+              </h4>
+              <p
+                class="card-footer bg-info bg-opacity-50 rounded custom-text-color-antiquewhite fw-light fs-5 p-3 me-3 text-uppercase position-absolute bottom-0"
+              >
+                The most beautiful in the world is, of course, the world itself.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4">
+          <div class="card position-relative mt-4 mb-4">
+            <img
+              class="rounded img-fluid img-stay"
+              src="../assets/img/food-thumbnail.jpeg"
+              alt="sightseeing"
+            />
+            <div class="card-img-overlay">
+              <h4
+                class="card-title custom-background-color-antiquewhite opacity-75 rounded custom-text-color-orangered fw-bolder fs-3 p-2 d-inline"
+              >
+                & Food Tasting and more!
+              </h4>
+              <p
+                class="card-footer bg-info bg-opacity-50 rounded custom-text-color-antiquewhite fw-light fs-5 p-3 me-3 text-uppercase position-absolute bottom-0"
+              >
+                Bringing international flavors to your table
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="container-fluid bg-info bg-opacity-50 position-relative text-center"
+    >
+      <h1
+        class="custom-text-color-antiquewhite custom-font-size-25 ms-5 me-3"
+        style="font-family: 'Patrick Hand', cursive"
+      >
+        SMART<span class="custom-text-color-orangered">TRAVEL</span>
+        <img
+          src="../assets/img/logo.png"
+          alt="smart-travel"
+          style="height: 35px"
+        />
+      </h1>
+      <p class="custom-text-color-antiquewhite">1234 SmartTravel Avenue<br>Atlanta GA, 34567</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

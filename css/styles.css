@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Permanent+Marker&display=swap");
+
+#container-fluid {
+  height: 600px;
+  background-image: url("../assets/img/main-background-img.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+}
+
+.bi-box-arrow-in-right,
+.bi-cart {
+  font-size: 30px;
+  color: orangered;
+}
+
+button.navbar-toggler:focus {
+  color: lightblue;
+}
+
+.phrase {
+    font-family: "Permanent Marker", cursive;
+}

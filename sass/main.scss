@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+// declare variables
+$main-color: orangered;
+$submain-color: antiquewhite;
+
+// override existing sass variables
+$font-family-base: "Urbanist", sans-serif;
+$enable-negative-margins: true;
+$border-style: none;
+$border-width: 0px;
+
+@import "../node_modules/bootstrap/scss/_functions.scss";
+@import "../node_modules/bootstrap/scss/_variables.scss";
+
+// add own custom values and add into existing sass variables
+$custom-position-values: (
+  33: 33%,
+);
+
+$position-values: map-merge($custom-position-values, $position-values);
+
+// create own custom class
+$utilities: (
+  "custom-border-top-radius": (
+    property: border-top-left-radius border-top-right-radius,
+    class: custom-border-top-radius,
+    values: (
+      25: 25px,
+      50: 50px,
+    ),
+  ),
+  "custom-text-color": (
+    property: color,
+    class: custom-text-color,
+    values: (
+      "orangered": $main-color,
+      "antiquewhite": $submain-color,
+    ),
+  ),
+  "custom-font-size": (
+    property: font-size,
+    class: custom-font-size,
+    values: (
+      25: 25px,
+      50: 50px,
+    ),
+  ),
+  "customer-background-color": (
+    property: background-color,
+    class: custom-background-color,
+    values: (
+      "antiquewhite": $submain-color,
+    ),
+  ),
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
